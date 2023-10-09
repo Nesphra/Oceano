@@ -1,0 +1,37 @@
+.newsBody{
+    display: flex;
+    flex-direction:column ;
+    text-align: center;
+    margin-inline: 25%;
+}
+
+.article {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+}
+
+.article img{
+    width: 100%;
+}
+
+.article a{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.article a:hover{
+    text-decoration: underline;
+}
+
+.article p{
+    margin-block: 50px;
+}
+
+.pagination{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 25px;
+    background-color: blue;
+}
