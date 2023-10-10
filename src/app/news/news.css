@@ -3,6 +3,11 @@
     flex-direction:column ;
     text-align: center;
     margin-inline: 25%;
+    padding-top: 10vh;
+}
+
+.newsBody>*:first-child{
+    margin-block: 60px;
 }
 
 .article {
@@ -26,12 +31,4 @@
 
 .article p{
     margin-block: 50px;
-}
-
-.pagination{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: 25px;
-    background-color: blue;
 }

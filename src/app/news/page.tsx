@@ -1,5 +1,5 @@
 import React from 'react';
-import './page.css';
+import './news.css';
 
 export const News = async () => {
     // // Getting the current date for the string date
@@ -33,7 +33,7 @@ export const News = async () => {
 
     return (
         <div className='newsBody'>
-            <div></div>
+            <p>Keep yourself updated with the latest news.</p>
             {articles.map((article: any, index: number) => (
                 <div key={index} className='article'>
                     <a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a>
