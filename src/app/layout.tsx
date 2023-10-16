@@ -19,20 +19,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='navigationBar'>
-          <Image src='/favicon.ico' width={40} height={40} alt='icon' className='icon'></Image>
-          <Link href={'/'}>Home</Link>
-          <div className="dropdown">
-            <button className="dropbtn">Projects⏷</button>
-            <div className='dropdown-content'>
-              <Link href={'#'}>Oceano</Link>
-              <Link href={'#'}>Aquawind</Link>
+        <header>
+          <nav>
+            <Image src='/favicon.ico' width={40} height={40} alt='icon' className='icon'></Image>
+            <Link href={'/'}>Home</Link>
+            <div className="dropdown">
+              <button className="dropbtn">Projects⏷</button>
+              <div className='dropdown-content'>
+                <Link href={'#'}>Oceano</Link>
+                <Link href={'#'}>Aquawind</Link>
+              </div>
             </div>
-          </div>
-          <Link href={'/news'}>News</Link>
-          <Link href={'/blogs'}>Blogs</Link>
-          <Link href={'/'}>Contact</Link>
-        </div>
+            <Link href={'/news'}>News</Link>
+            <Link href={'/blogs'}>Blogs</Link>
+            <Link href={'/'}>Contact</Link>
+          </nav>
+        </header>
         {children}
         </body>
     </html>
