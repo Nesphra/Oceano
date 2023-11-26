@@ -9,9 +9,6 @@ export default function Home() {
         <h2>Making the oceans our next frontier.</h2>
       </div>
       <div className='mainTextDiv'>Main text</div>
-      <div>
-        <form>Contact us</form>
-      </div>
     </main>
   )
 }

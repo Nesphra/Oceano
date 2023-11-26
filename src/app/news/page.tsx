@@ -2,25 +2,23 @@ import React from 'react';
 import './news.css';
 
 export const News = async () => {
-    // // Getting the current date for the string date  
-    let varDate = new Date()
-    let day = varDate.getDate()
-    if (day > 27){
-        day = 28
-    }
-    let month = varDate.getMonth()
-    if (month == 0){
-        month = 12
-    }
-    let year = varDate.getFullYear()
-    var dateStr = year +"-"+ month +"-"+ day //is a value under this form: 2023-09-16
-
+    // // Getting the current date for the string date
+    // function addMonths(date, months) {
+    //     date.setMonth(date.getMonth() + months);
+    //     return date;
+    // }
+      
+    // const datee = addMonths(new Date(), -1); // six months before now
+    // // Thu Apr 30 2009 01:22:46 GMT-0600 
+    // console.log(datee)
+      
     // Getting the news
     const topic: string = "Oceanography";
+    const date: string = "2023-09-07";
     const key = process.env.NEXT_PUBLIC_NEWS_KEY;
 
     const apiResponse = await fetch(
-        `https://newsapi.org/v2/everything?q=${topic}&from=${dateStr}&sortBy=publishedAt&apiKey=${key}`,
+        `https://newsapi.org/v2/everything?q=${topic}&from=${date}&sortBy=publishedAt&apiKey=${key}`,
     );
     const apijson = await apiResponse.json();
 
