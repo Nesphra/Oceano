@@ -6,9 +6,9 @@ export default function Home() {
       <div className='title'>
         <p>Project</p>
         <h1>Oceano</h1>
-        <h2>Making the oceans our next frontier.</h2>
+        <h2>Making the oceans our next frontier</h2>
       </div>
-      <div className='mainTextDiv'>Main text</div>
+      <div className='mainTextDiv'></div>
     </main>
   )
 }
